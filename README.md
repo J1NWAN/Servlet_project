@@ -4,11 +4,11 @@
 ## 20.05.20 계산기 구현
 
 - 개발 도구 및 버전
-- Eclipse
-- Apache Tomcat v8.5
-- Servlet api v3.1
+ - Eclipse
+ - Apache Tomcat v8.5
+ - Servlet api v3.1
  
-<br><br>
+<br>
 
 - Operator를 옵션 선택식으로 구현
 - Calculator 클래스에 계산 메소드 구현
