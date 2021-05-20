@@ -2,7 +2,7 @@
 <hr><br>
 
 ## 20.05.20 계산기 구현
-<br>
+
 - 개발 도구 및 버전
 - Eclipse
 - Apache Tomcat v8.5
