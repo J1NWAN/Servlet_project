@@ -1,27 +1,32 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta charset="UTF-8">
-  <title>계산기</title>
+<meta charset="UTF-8">
+<title>계산기</title>
 </head>
-<body>
-   <center>
-     <h3>Calculator Simple Servlet Practice</h3>
-     <hr>
-     <form action="calc" method="post">
-       <input type="text" name="num1" width="300" size="5">
-       <select name="operator">
-         <option selected> + </option>
-         <option> - </option>
-         <option> * </option>
-         <option> / </option>
-       </select>
-       <input type="text" name="num2" width="300" size="5">
-       <br><br>
-       <input type="submit" value="계산">
-       <input type="reset" value="초기화">
-     </form>
-     <hr>
-   </center>
+<body style="background-color: lightyellow">
+	<input type="button" value="메인으로" style="height: 20px; background-color: snow;" onclick="location.href='index.html'">
+	<center style="display: flex;
+			  justify-content: center;
+			  align-items: center;
+			  min-height: 90vh;">
+		<form action="calc" method="post">
+			<h2>계산기</h2>
+			<hr>
+			<input type="text" name="num1" size="5">
+			<select name="operator">
+				<option selected> + </option>
+				<option> - </option>
+				<option> * </option>
+				<option> / </option>
+			</select>
+			<input type="text" name="num2" size="5">
+			<br>
+			<div style="padding: 20px">
+				<input type="submit" value="계산" style="width: 100px; height: 50px; margin: 20px; background-color: gray;">
+				<input type="reset" value="초기화" style="width: 100px; height: 50px; margin: 20px; background-color: gray;">
+			</div>
+		</form>
+	</center>
 </body>
 </html>

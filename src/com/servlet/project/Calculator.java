@@ -11,7 +11,6 @@ import javax.servlet.http.HttpServletResponse;
 
 @WebServlet("/calc")
 public class Calculator extends HttpServlet {
-	private static final long serialVersionUID = 1L;
 
 	protected void service(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		response.setCharacterEncoding("UTF-8");
