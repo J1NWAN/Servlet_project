@@ -12,7 +12,10 @@ import javax.servlet.http.HttpServletResponse;
 
 @WebServlet("/lotto")
 public class Lotto extends HttpServlet {
-
+	
+	int[] num = new int[6];
+	ArrayList<String> list = new ArrayList<String>();
+	
 	protected void service(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
 		response.setCharacterEncoding("UTF-8");
@@ -21,15 +24,7 @@ public class Lotto extends HttpServlet {
 
 		int value = Integer.parseInt(request.getParameter("num"));
 
-		int[] num = new int[6];
-		ArrayList<String> list = new ArrayList<String>();
-
-		for (int i = 0; i < value; i++) {
-			for (int j = 0; j < num.length; j++)
-				num[j] = (int)(Math.random() * 46 + 1);
-			
-			list.add(num[0] + " " + num[1] + " " + num[2] + " " + num[3] + " " + num[4] + " " + num[5]);
-		}
+		lottoCreate(value);
 
 		out.println("<HTML>");
 		out.println("<HEAD><TITLE>로또 번호</TITLE></HEAD>");
@@ -40,5 +35,14 @@ public class Lotto extends HttpServlet {
 			out.println("<br><br>");
 		}
 		out.println("</body></html>");
+	}
+	
+	public void lottoCreate(int value) {
+		for (int i = 0; i < value; i++) {
+			for (int j = 0; j < num.length; j++)
+				num[j] = (int)(Math.random() * 46 + 1);
+			
+			list.add(num[0] + " " + num[1] + " " + num[2] + " " + num[3] + " " + num[4] + " " + num[5]);
+		}
 	}
 }
