@@ -40,4 +40,19 @@
   - Button 식 사용자 입력 방식
 <br><br>
 
-> Java로 구현한 로또 생성기 Servlet으로 구현 예정
+## 20.05.25 로또 생성기 구현
+
+``` Java ```
+- Lotto.java 파일 생성
+  - lottoCreate 메소드 구현
+     - 사용자의 "value" 값을 전달 받음
+     - "value" 값 만큼 반복
+  - 사용자 화면에 결과 출력
+
+<br>
+
+``` HTML ```
+- lotto.html 파일 생성
+  - text에 반복 횟수 입력
+  - Button 식 생성 방식
+<br><br>
