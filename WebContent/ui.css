@@ -1,0 +1,25 @@
+@charset "UTF-8";
+body {
+ background-color: lightyellow;  
+}
+
+#button-main {
+ height: 20px; background-color: snow; 
+}
+
+center {
+    display: flex;
+	  justify-content: center;
+		align-items: center;
+		min-height: 100vh;
+}
+
+.button-div {
+ padding: 20px; 
+
+}
+
+.button-div > input {
+  width: 100px; height: 50px; margin: 20px;
+  background-color: gray;
+}
